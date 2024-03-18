@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import PriceOptions from './components/PriceOptions/PriceOptions'
+import LineChart from './components/LineChart/LineChart'
 // import DaisyNav from './components/DaisyNav/DaisyNav'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     {/* <DaisyNav></DaisyNav> */}
       <h1 className='text-7xl bg-rose-500 '>Vite + React</h1>
       <PriceOptions></PriceOptions>
+     <LineChart></LineChart>
     </>
   )
 }
