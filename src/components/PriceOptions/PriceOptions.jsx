@@ -1,3 +1,4 @@
+
 import PriceOption from "../PriceOption/PriceOption";
 
 
@@ -15,7 +16,7 @@ const PriceOptions = () => {
               "Locker room access",
               "Basic gym equipment usage"
             ],
-            "price": "29.99"
+            "price": "20"
           },
           {
             "id": 2,
@@ -28,7 +29,7 @@ const PriceOptions = () => {
               "Access to indoor track",
               "Access to functional training area"
             ],
-            "price": "49.99"
+            "price": "30"
           },
           {
             "id": 3,
@@ -42,16 +43,18 @@ const PriceOptions = () => {
               "Free smoothie bar access",
               "Priority booking for classes and facilities"
             ],
-            "price": "79.99"
+            "price": "40"
           }
         ];
  
     return (
-        <div>
-    <h2 className='text-2xl'>Best Prices in the town</h2>
-        {
+        <div className="m-12">
+    <h2 className='text-5xl'>Best Prices in the town</h2>
+       <div className="grid md:grid-cols-3 gap-6">
+       {
             priceOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
         }
+       </div>
 
         </div>
     );
